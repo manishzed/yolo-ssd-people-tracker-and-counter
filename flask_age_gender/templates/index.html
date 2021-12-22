@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Softweb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="favicon" rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    
+</head>
+
+<body>
+<section class="header">
+    <div class="container text-center">
+        <div class="logo">
+        <!-- 
+            <img src="images/logo.png" alt="Logo">
+            ---------->
+        </div>
+        
+    </div>
+</section>
+<div class="container page-wrapper">
+    <div class="main-title text-center overflow-hidden">
+        <h2>Gender Age</h2>
+    </div>
+    <div class="whitebg border-dash text-center mt-4 p-4">
+        <div class="d-flex justify-content-center mb-3">
+            <div class="custom-file w-auto mr-3">
+            
+             <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('GenderAgeDetection')}}"method="post" enctype="multipart/form-data">
+                <input type="file" name="image" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
+            <div>
+                <button class="btn btn-primary" type="submit">Predict</button>
+            </div>
+            
+            </form>
+            
+            
+        </div>
+        <br>
+        <br>
+            
+        <center>
+      <div class="col-sm-5 col-sm-offset-1">
+      <br><br><label>{{wrnMsg_label}}</label>
+        {% if image_to_show %}
+          <h3>Predicted Age and Gender : </h3>  
+          </center>
+          <br>
+          <center>
+          <div id="results">
+            
+            <div>
+             <br><img src = "{{ image_to_show }}"/>
+
+                </div>
+          </div>
+          </center>
+        {% endif %}
+            
+        <!------
+        <p class="browse-message">*File should contain 16 column displaying temperature data from 16 sensors.</p>
+        ------->
+    </div>
+    <div class="whitebg p-4">
+        <div class="text-center">
+        <!--
+            <h2>Cancer Prediction probability chart for patient</h2>
+            <img src="images/graph.png" alt="graph">
+            ---->
+        </div>
+        
+    </div>
+</div>
+<footer>
+    <div class="container text-center">
+        <p>© 2021 Softweb. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+@media(max-width:1600px){
+    .login-box{
+        height: auto;
+    }
+}
+
+@media(max-width:1440px){
+    .login-box{
+        padding:30px;
+    }
+    .login-box .logo {
+        width: 280px;
+    }
+    .navbar-expand-xl .navbar-nav .nav-link{
+        font-size: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .footer{
+        margin-bottom: 10px;
+    }
+    
+}
+@media(max-width:1199px){
+    .searchbox {
+        width: 225px;        
+    }
+    .help {
+        font-size: 12px;
+    }
+    .profile-info {
+        flex-wrap: wrap;
+    }
+    .profile-address {
+        position: static;
+        margin-top: 10px;
+    }
+    .profile-info-right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 10px 0 0;
+        border: 0;
+    }
+    .available-jobs{
+        flex-wrap: wrap;        
+    }
+    .available-jobs-left, .available-jobs-right{
+        width: 100%;
+    }
+    .available-jobs-right{
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 0;
+        order: -1;
+        padding-top: 0;
+    }
+    .credentialing-inform-left{
+        margin-right: 20px;
+    }
+    .messaging-user{
+        min-width: 250px;
+    }
+    .messaging-chat {
+        width: calc(100% - 250px);
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        background: #2e3644;
+        padding: 10px;
+        left: 0;
+        border: 1px solid #3a4455;
+        margin-top: 12px;
+        width: 200px;
+    }
+    .navbar-collapse .nav-item {
+        width: 100%;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #c1c3c7;
+        font-size: 14px;
+        padding: 10px;
+        line-height: normal;
+    }
+    .header-links .dropdown-menu a{
+        font-size: 14px;
+    }
+    .header-right .dropdown-menu{
+        background: #2e3644;
+        overflow: hidden;
+    }
+    .header-links .dropdown-menu{
+        overflow: hidden;
+        border-bottom: solid 2px #3a4454;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+        color: #fff;
+        background: #39404e;
+    }
+
+    .profile-actions a {
+        display: table-cell;
+        margin: 0;
+        padding: 10px 25px 0 0;
+    }
+    .container, .container-md, .container-sm {
+        max-width: 100%;
+    }
+    .job-post-header-right .price, .job-post-header-right .postinfo{
+        margin-right: 15px;
+        width: 100%;
+    }
+    .header-right .navbar-expand-xl .navbar-collapse{
+        left: auto;
+        right: 0;
+    }
+    .apply-btn, .reject-btn{
+        min-width: inherit;
+    }
+}
+
+@media(max-width:991px){
+    .login-box-wrapper {
+        width: 100%;
+    }
+    .searchbox {
+        width: 175px;        
+    }
+    .header-links {
+        flex-wrap: wrap;
+    }
+    
+    .credentialing-inform {
+        margin: -28px 0px 0 -25px;
+        padding-right: 15px;
+    }
+}
+@media(max-width:776px){
+    .banner{display: block;}
+    .breadcrumb{padding-left: 0px;}
+    .banner-wrapper{padding-top: 20px;}
+    .job-post-content-item.job-setting{position: relative; top: inherit;}
+    .portal-register .name-container{flex-wrap: wrap;}
+    .portal-register .name-container .form-group{width: calc(50% - 12px);}
+    .credentialing-inform{margin: -10px; padding-right: 0;}
+    .credentialing-inform-container{display: block;}
+    .credentialing-inform-left{margin-right: 0; border: none; padding: 0 0 25px; border-bottom: solid 1px #ced4da;}
+    .credentialing-inform-right{width: 100%; padding-top: 20px;}
+    .messaging-container{display: block;}
+    .messaging-chat{width: 100%;}
+    .userhamburger{display: block;}
+    .userlist-close{display: block;}
+    .messaging-user {
+        min-width: 200px;
+        position: absolute;
+        z-index: 1;
+        background-color: #fff;
+        left: -400px;
+        -webkit-transition: all .4s ease-in;
+            -o-transition: all .4s ease-in;
+            transition: all .4s ease-in;
+    }
+    .messaging-user.collapse{
+        -webkit-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+    }
+    .messaging-user.show{
+        left: 30px;
+    }  
+    #myjobtabs .nav-tabs .nav-link {
+        padding: .5rem 0.7rem;
+        font-size: 14px;
+        margin: 0 1px;
+    }  
+    
+}
+
+@media(max-width:600px){
+    .banner h1{
+        font-size: 22px;
+    }
+    .job-post-header{
+        display: block;
+    }
+    .job-post-header-right{
+        position: relative; 
+        margin-top: 12px;
+    }
+    .header-right .navbar-collapse{
+        right: 0;
+        left: auto;
+    }
+    .job-detail-header{
+        display: block;
+    }
+    .job-detail-header-right{
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    .profile-detail{display: block;}
+    .profile-pic{width: 170px; margin-bottom: 20px;}
+    #myjobtabs .nav-tabs .nav-item{width: 100%;}
+    #myjobtabs .nav-tabs .nav-link{margin: 0;}
+    #myjobtabs .nav-tabs .nav-item.show .nav-link, #myjobtabs .nav-tabs .nav-link.active{border: solid 1px #dee2e6;}
+}
+
+@media(max-width:480px){
+    .login-box .logo{
+        width: 250px;
+    }
+    .name-container{
+        flex-wrap: wrap;
+    }
+    .name-container .form-group{
+        width: 100%;
+    }
+    .login-box h1 .sub-title{
+        font-size: 23px;
+    }
+    .logo img{
+        height: 35px;
+    }
+    .portal-register .name-container .form-group{width: 100%;}
+    .header-right .dropdown > a{
+        padding: 20px 10px;
+    }
+    .icon-title{font-size: 20px;}
+    .icon-title .icon-title-img{
+        width: 50px;
+    }
+    .available-jobs-right{min-width: 100%;}
+    .footer{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .copyright {
+        line-height: normal;
+        margin-top: 20px;
+    }
+    .submit-cancel{
+        display: block !important;
+    }
+    .submit-cancel .custom-control{
+        margin-top: 20px;
+    }
+    .container, .container-md, .container-sm {
+        padding: 0;
+    }
+    .page-wrapper{
+        padding: 30px 15px;
+    }
+    .pagination-wrapper{
+        display: block !important;
+        text-align: center;
+    }
+    .pagination-wrapper ul.pagination{
+        margin: 10px auto;
+        display: inline-flex;
+    }
+    .credentialing-inform{margin: 0;}
+}
+@media(max-width:380px){
+    .login-box .logo{
+        width: 200px;
+    }
+    .header-right .navbar{padding-left: 0; padding-right: 10px;}
+    .logo {
+        margin-right: 10px;
+    }
+    .logo img {
+        height: 33px;
+    }
+    .job-post-content-item{
+        display: block;
+    }
+    .job-post-content-item img{margin-left: 0;}
+    .job-post-content-item span{
+         width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+}
